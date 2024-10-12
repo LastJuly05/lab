@@ -1,0 +1,82 @@
+/* Đặt nền và căn chỉnh cho toàn bộ trang */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f1f7; /* Màu nền xanh nhạt dịu mắt */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar chứa các nút điều hướng môn học */
+.sidebar {
+    width: 250px;
+    background-color: #34495e; /* Màu xanh đậm hiện đại */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    color: #ecf0f1; /* Màu chữ trắng cho tiêu đề */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Màu trắng cho text */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2980b9; /* Hiệu ứng hover với màu xanh đậm hơn */
+}
+
+/* Nội dung chính của trang */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #fff; /* Màu trắng cho phần nội dung chính */
+    color: #2c3e50; /* Màu chữ xanh đậm */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Bóng nhẹ cho nội dung */
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
