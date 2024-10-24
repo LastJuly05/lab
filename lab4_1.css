@@ -1,0 +1,87 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+nav-tabs {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.nav-tabs li {
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+header { 
+        background-color: #fff;
+        padding: 20px;
+        border-bottom: 1px solid #e0e0e0;  
+    background-color: #006699;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.upload-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-section input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.upload-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section button:hover {
+    background-color: #45a049;
+}
+
+.document-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.document-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.document-section li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.document-section a {
+    text-decoration: none;
+    color: #006699;
+}
+
+.document-section a:hover {
+    text-decoration: underline;
+}
